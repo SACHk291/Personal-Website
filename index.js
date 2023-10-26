@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static("public"));
 
-app.post("https://dreamy-sorbet-161d61.netlify.app/submit", (req, res) => {
+app.post(__dirname + "/submit", (req, res) => {
     var details =  req.body;
     details = JSON.stringify(details);
     fs.writeFile("details.txt", details, (err) => {});
