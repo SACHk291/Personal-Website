@@ -141,15 +141,15 @@ input{
 @media(max-width:768px){
 
     .form-group label {
-        width: 200px; 
+        width: 50%; 
         margin-right: 10px;
     }
 
     .form-group > input{
-        width: 180px;
+        width: 50%;
     }
     #message{
-        width: 180px;
+        width: 50%;
         height: auto;
     }
 
